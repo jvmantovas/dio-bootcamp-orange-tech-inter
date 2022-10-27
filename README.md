@@ -65,7 +65,7 @@ Este repositório contém os desafios, exercícios e atividades desenvolvidos du
 </details>
 
 <details>
-  <summary>Módulo IV - Dominando Algoritmos Básicos com Desafios de Código JavaScript</summary>
+  <summary>Módulo IV - Dominando Algoritmos Básicos com Desafios de Código JavaScript ✔️</summary>
   
   * Desafio de Código: Somando Múltiplos
   * Desafio de Código: FizzBuzz
@@ -92,7 +92,7 @@ Este repositório contém os desafios, exercícios e atividades desenvolvidos du
 </details>
 
 <details>
-  <summary>Módulo VI - Dominando algoritmos intermediários com desafios de código JavaScript</summary>
+  <summary>Módulo VI - Dominando algoritmos intermediários com desafios de código JavaScript ✔️</summary>
   
   * Desafio de Código: Fatorial Desejado
   * Desafio de Código: Checagem de Palindromos
