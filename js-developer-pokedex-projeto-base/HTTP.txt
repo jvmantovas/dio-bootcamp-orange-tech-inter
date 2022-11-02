@@ -1,0 +1,39 @@
+Requisição HTTP
+
+URL: https://pokeapi.co/api/v2/pokemon
+     ${IP}/${path = caminho de identificação do recurso}
+
+     IP: https://pokeapi.co
+     DNS:https://127.0.0.1:3000
+
+     PATH: /api/v2/pokemon
+
+Request Method: GET | POST | PUT | DELETE | PATCH
+
+GET = Buscar recurso
+POST = Inserir (se for REST API)
+PUT = atualizar endereço(caminho)
+DELETE = remover caminho
+
+Metodos de envio de dados(CRUDE):
+Path params, ex: /api/v2/pokemon/${id}(1,2,3, etc)
+Query String: ex: /api/v2/pokemon?type=grass (mais usado em buscas)
+
+Request Headers:
+Configuração da API
+ex: accept-language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+ex2: content-type: application/json
+
+Body:
+É o corpo da requesição, o que vai no body é de acordo com o content-type do header
+ex: {
+    "name": "test"
+}
+
+Status Code:
+É o status da requesição em forma de numero
+200-299: SUCESSO
+300-399: redirect
+400-499: ERRO CLIENTE
+500-599: ERRO INTERNO NO SERVIDOR
+statuscodedog.com (para ver os status)
