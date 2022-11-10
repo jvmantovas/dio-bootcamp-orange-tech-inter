@@ -4,7 +4,21 @@
 }
 
 body {
-  background-color: #f6f8fc;
+  background-color: #0086da;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading h1 {
+  font-family: "Pokemon Solid", sans-serif;
+  color: #ffcc00;
+  -webkit-text-stroke: 2px #0075be;
+  text-shadow: -2px 2px 0px #0a285f;
 }
 
 .content {

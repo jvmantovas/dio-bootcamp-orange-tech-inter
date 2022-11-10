@@ -9,6 +9,24 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
   pokemon.types = types;
   pokemon.type = type;
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
+  const abilities = pokeDetail.abilities.map(
+    (abilitySlot) => abilitySlot.ability.name
+  );
+  const [ability] = abilities;
+  pokemon.abilities = abilities;
+  pokemon.ability = ability;
+  pokemon.hp = pokeDetail.stats[0].base_stat;
+  pokemon.hpPercent = pokeDetail.stats[0].base_stat / 2 + "%";
+  pokemon.atk = pokeDetail.stats[1].base_stat;
+  pokemon.atkPercent = pokeDetail.stats[1].base_stat / 2 + "%";
+  pokemon.def = pokeDetail.stats[2].base_stat;
+  pokemon.defPercent = pokeDetail.stats[2].base_stat / 2 + "%";
+  pokemon.specialAtk = pokeDetail.stats[3].base_stat;
+  pokemon.specialAtkPercent = pokeDetail.stats[3].base_stat / 2 + "%";
+  pokemon.specialDef = pokeDetail.stats[4].base_stat;
+  pokemon.specialDefPercent = pokeDetail.stats[4].base_stat / 2 + "%";
+  pokemon.speed = pokeDetail.stats[5].base_stat;
+  pokemon.speedPercent = pokeDetail.stats[5].base_stat / 2 + "%";
   return pokemon;
 }
 
