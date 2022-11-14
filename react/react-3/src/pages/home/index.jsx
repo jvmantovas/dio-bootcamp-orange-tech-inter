@@ -9,7 +9,7 @@ const Teste = () => {
     setName((prev) => (prev === "João" ? "José" : "João"));
   };
 
-  //useEffect serve para gerenciar quando um componente esta renderizando, sofrendo alguma ação ou realizando alguma ação
+  //useEffect serve para gerenciar o ciclo de vida de um componente
   useEffect(() => {
     console.log("Renderizou o nome");
   }, [name]);
